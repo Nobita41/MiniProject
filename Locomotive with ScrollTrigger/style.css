@@ -1,0 +1,42 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Gilroy';
+}
+ 
+html, body{
+height: 100%;
+width: 100%;
+}
+.page1{
+    width: 100%;
+    height: 100%;
+    background: rgba(156, 87, 87, 0.527);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page2{
+    width: 100%;
+    height: 100%;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page3{
+    width: 100%;
+    height: 100%;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    /* border-radius: 50%; */
+background: white;
+border: 1px solid black;
+}

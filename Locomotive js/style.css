@@ -1,0 +1,41 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Gilroy';
+}
+ 
+html, body{
+height: 100%;
+width: 100%;
+}
+
+.page1{
+    width: 100%;
+    height: 100vh;
+    /* background: navajowhite; */
+}
+.page2{
+    width: 100%;
+    height: 100vh;
+    /* background: royalblue; */
+}
+.page3{
+    width: 100%;
+    height: 100vh;
+    /* background: yellowgreen; */
+}
+.page2 .image{
+    height: 100%;
+    width: 35%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* scale: 1.2; */
+}

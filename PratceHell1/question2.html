@@ -1,0 +1,49 @@
+<!-- Create a page with two image and a button when button is clcked, swap the source attriibute of the image -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .maiin{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .maiin img{
+            width: 50%;
+            height: 600px;
+            object-fit: cover;
+            padding: 10px;
+       
+        }
+        button{
+            text-align: center;
+            margin-left: 50vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="maiin">
+        <img class="img1" src="/barbora-polednova-cpE9iQxrzuA-unsplash.jpg" alt="">
+    <img class="img2" src="/robert-penaloza-hxDCFT7ZXnU-unsplash.jpg" alt="">
+    </div>
+    <button>Click me !!</button>
+    
+
+
+    <script>
+       var btn= document.querySelector("button");
+        var img1= document.querySelector(".img1");
+        var img2=document.querySelector(".img2");
+       btn.addEventListener("click", function(){
+        var src1=img1.src;
+        var src2=img2.src;
+        img1.src=src2;
+        img2.src=src1;
+       })
+    </script>
+</body>
+</html>

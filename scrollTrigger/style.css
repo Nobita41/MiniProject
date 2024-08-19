@@ -1,0 +1,46 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+/* font-family: 'Gilroy'; */
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    }
+.main{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.page1{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(114, 250, 193) ;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.page2{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(55, 153, 63) ;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.page3{
+    width: 100%;
+    height: 100%;
+    background-color: salmon ;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.circle{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(lightblue, royalblue);
+}

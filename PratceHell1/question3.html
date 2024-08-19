@@ -1,0 +1,32 @@
+<!-- Create a form with  input fields and use javascript to validate the form and display an error message is the 
+ input is invalidate
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h4></h4>
+    <form >
+        <input id="inp1" type="text" placeholder="Enter here">
+        <input id="inp2" type="text" placeholder="Enter here">
+        <!-- <button type="submit">Submit</button> -->
+         <input type="submit" name="" id="">
+    </form>
+    <script>
+        var form=document.querySelector("form");
+        var inp1= document.querySelector("#inp1");
+        var inp2= document.querySelector("#inp2");
+        form.addEventListener("submit" ,function(event){
+            event.preventDefault();
+            if(inp1.value===''|| inp2.value===''){
+                document.querySelector("h4").textContent="Some input box not fill up chack again";
+                document.querySelector("h4").style.color="red";
+            }
+        })
+    </script>
+ </body>
+ </html>
